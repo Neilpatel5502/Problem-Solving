@@ -22,7 +22,7 @@ Welcome to my **Problem Solving** repository! This project showcases my solution
 
 1. **Clone this repository** to start exploring:
    ```bash
-   git clone https://github.com/Neilpatel5502/problem-solving.git
+   git clone https://github.com/Neilpatel5502/Problem-Solving.git
 
 2. **Browse through the categories** to find problems in areas that interest you or are relevant to the role you're looking to hire for.
 3. **Review the solutions** with detailed explanations and test cases, or contribute your own ideas and improvements.
