@@ -29,4 +29,4 @@ Welcome to my **Problem Solving** repository! This project showcases my solution
 
 ## Contributing:
 
-I'm always open to feedback and contributions. Feel free to open issues for suggestions or contribute to the repository by submitting a pull request.
+I am always open to feedback and contributions. Feel free to open issues for suggestions or contribute to the repository by submitting a pull request.
