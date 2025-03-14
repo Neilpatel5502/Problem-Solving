@@ -1,3 +1,6 @@
+# Problem https://leetcode.com/problems/merge-intervals/
+# Time Complexity: O(Nlog(N))
+# Space Complexity: O(N)
 from typing import List
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
