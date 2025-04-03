@@ -1,3 +1,7 @@
+# Problem Link: https://leetcode.com/problems/apply-operations-to-maximize-score
+
+# Time Complexity: O(N log N), where N is the length of nums, due to heap operations and prime factorization.
+# Space Complexity: O(N)
 
 from math import sqrt
 from heapq import heapify, heappop
@@ -10,8 +14,6 @@ def maximumScore(nums, k):
         - Use a max heap to process elements with the highest prime score first.
         - For each element, determine the number of valid subarrays it appears in and apply the operation optimally.
         - Multiply the score with selected numbers while ensuring k operations are performed.
-
-    Time Complexity: O(N log N), where N is the length of nums, due to heap operations and prime factorization.
     """
 
     N = len(nums)
