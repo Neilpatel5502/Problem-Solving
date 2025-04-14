@@ -1,4 +1,4 @@
-# Problem: Reverse a singly linked list
+# Problem: https://leetcode.com/problems/reverse-linked-list
 # Time Complexity: O(n)       # n is the number of nodes in the linked list
 # Space Complexity: O(1)      # In-place reversal using constant space
 
