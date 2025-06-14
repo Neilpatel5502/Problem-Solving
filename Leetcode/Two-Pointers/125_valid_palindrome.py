@@ -1,26 +1,33 @@
 # Problem: https://leetcode.com/problems/valid-palindrome/
+
 # Time Complexity: O(n) – where n is the length of the string
-# Space Complexity: O(n) – due to the filtered and lowercased string
+# Space Complexity: O(1)
 
 def isPalindrome(s):
     """
     Approach:
-        - Filter out all non-alphanumeric characters using `str.isalpha()` and `str.isdigit()`.
-        - Convert the remaining characters to lowercase.
-        - Use two-pointer technique to check if the cleaned string is a palindrome by comparing characters from both ends.
+        - Use two pointers (L and R) starting from beginning and end of the string.
+        - Skip characters that are not alphanumeric using isalpha() and isdigit().
+        - Compare lowercase version of characters at L and R.
+        - If any mismatch is found, return False.
+        - If the entire string passes the checks, return True.
     """
-
-    # Remove non-alphanumeric characters and convert to lowercase
-    s = ''.join(filter(lambda x: x.isalpha() or x.isdigit(), s)).lower()
-
-    # Initialize two pointers
     L = 0
     R = len(s) - 1
 
-    # Compare characters from both ends moving toward the center
     while L < R:
-        if s[L] != s[R]:
+        # Skip non-alphanumeric characters from the left
+        while L < R and not s[L].isalpha() and not s[L].isdigit():
+            L += 1
+
+        # Skip non-alphanumeric characters from the right
+        while L < R and not s[R].isalpha() and not s[R].isdigit():
+            R -= 1
+
+        # Compare characters
+        if s[L].lower() != s[R].lower():
             return False
+
         L += 1
         R -= 1
 
