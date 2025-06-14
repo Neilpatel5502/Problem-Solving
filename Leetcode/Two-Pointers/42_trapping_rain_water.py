@@ -1,4 +1,5 @@
-# Problem: https://leetcode.com/problems/trapping-rain-water/
+# Problem: https://leetcode.com/problems/trapping-rain-water
+
 # Time Complexity: O(n) – single pass through the array using two pointers
 # Space Complexity: O(1) – constant extra space used
 
