@@ -1,4 +1,5 @@
-# Problem: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+# Problem: https://leetcode.com/problems/longest-substring-without-repeating-characters
+
 # Time Complexity: O(n) – each character is visited at most twice
 # Space Complexity: O(k) – where k is the size of the character set used (at most O(26) for lowercase letters, O(128/256) for ASCII)
 
@@ -21,6 +22,7 @@ def lengthOfLongestSubstring(s):
         while s[R] in window:
             window.remove(s[L])  # Shrink window from the left
             L += 1
+
         window.add(s[R])  # Add new character to window
         output = max(output, len(window))  # Update max length
 
