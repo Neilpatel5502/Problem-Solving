@@ -1,4 +1,5 @@
-# Problem: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+# Problem: https://leetcode.com/problems/maximum-depth-of-binary-tree
+
 # Time Complexity: O(n) — where n is the number of nodes, as each node is visited once.
 # Space Complexity: O(n) — for the stack used in depth-first traversal (worst case in unbalanced tree).
 

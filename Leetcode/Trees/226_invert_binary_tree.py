@@ -1,4 +1,5 @@
-# Problem: https://leetcode.com/problems/invert-binary-tree/
+# Problem: https://leetcode.com/problems/invert-binary-tree
+
 # Time Complexity: O(n) — where n is the number of nodes in the tree, as each node is visited once.
 # Space Complexity: O(n) — for the stack in the worst case (completely unbalanced tree).
 
