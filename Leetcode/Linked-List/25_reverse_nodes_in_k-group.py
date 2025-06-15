@@ -1,4 +1,5 @@
-# Problem: https://leetcode.com/problems/reverse-nodes-in-k-group/
+# Problem: https://leetcode.com/problems/reverse-nodes-in-k-group
+
 # Time Complexity: O(n), where n is the number of nodes in the list
 # Space Complexity: O(1), in-place reversal without extra space
 
@@ -24,18 +25,20 @@ def reverseKGroup(head, k):
 
         next_group = kth_node.next
 
-        # Reverse k nodes
+        # prev should be pointing to the next_group
         prev, cur = kth_node.next, prev_group.next
+
+        # Reverse Nodes in group
         while cur != next_group:
             temp = cur.next
             cur.next = prev
             prev = cur
             cur = temp
 
-        # Connect reversed group to previous and next
-        tmp = prev_group.next  # This is the tail after reversal
-        prev_group.next = kth_node
-        prev_group = tmp
+        # Reverse pointers for first and last nodes of group
+        tmp = prev_group.next  # first node in group
+        prev_group.next = kth_node  # kth node will be first node
+        prev_group = tmp    # first node will be last node of the group hence prev_group
 
     return dummy.next
 
