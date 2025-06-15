@@ -1,4 +1,5 @@
 # Problem: https://leetcode.com/problems/remove-nth-node-from-end-of-list
+
 # Time Complexity: O(n)       # Single pass through the list to remove the node
 # Space Complexity: O(1)      # Uses constant space with two pointers
 
