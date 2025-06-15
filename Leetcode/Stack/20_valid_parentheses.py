@@ -1,4 +1,5 @@
-# Problem: https://leetcode.com/problems/valid-parentheses/
+# Problem: https://leetcode.com/problems/valid-parentheses
+
 # Time Complexity: O(n) – where n is the length of the string
 # Space Complexity: O(n) – for the stack in the worst case
 
