@@ -1,4 +1,5 @@
-# Problem Link: https://leetcode.com/problems/permutations/
+# Problem Link: https://leetcode.com/problems/permutations
+
 # Time Complexity: O(n * n!)     # n! permutations, each of length n
 # Space Complexity: O(n)         # space for current permutation and visited tracking
 
@@ -19,7 +20,7 @@ def permute(nums):
     |       |       |       |       |      |       |      |      |       |     |      |
    3 4     2 4     2 3  ~  3 4     1 4    1 3  ~  4 2    1 4    1 2  ~  3 2   3 1    2 1
    | |     | |     | |     | |     | |    | |     | |    | |    | |     | |   | |    | |
-   4 3     4 2     3 2  ~  4 3     4 1    3 1  ~  4 2    4 1    2 1  ~  3 2   3 1    2
+   4 3     4 2     3 2  ~  4 3     4 1    3 1  ~  4 2    4 1    2 1  ~  3 2   3 1    1 2
     """
 
     out = []                    # List to store final permutations
