@@ -1,4 +1,5 @@
 # Problem: https://leetcode.com/problems/generate-parentheses
+
 # Time Complexity: O(2^2n) in the worst case, but only valid combinations are generated – actual time is Catalan number C(n) ~ O(4^n / sqrt(n))
 # Space Complexity: O(n) for recursion stack and building each string
 

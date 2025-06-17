@@ -1,4 +1,5 @@
-# Problem Link: https://leetcode.com/problems/word-search/
+# Problem Link: https://leetcode.com/problems/word-search
+
 # Time Complexity: O(m * n * 4^l), where:
 #   - m x n = board size
 #   - l = length of the word
@@ -46,7 +47,7 @@ def exist(board, word):
     for i in range(len(board)):
         for j in range(len(board[0])):
             # If we can construct the word starting from cell (i, j)
-            if backtrack(i, j, 0):
+            if board[i][j] == word[0] and backtrack(i, j, 0):
                 return True
 
     # If no valid path found
