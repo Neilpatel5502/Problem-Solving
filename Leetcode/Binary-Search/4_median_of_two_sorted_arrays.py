@@ -1,4 +1,5 @@
-# Problem: https://leetcode.com/problems/median-of-two-sorted-arrays/
+# Problem: https://leetcode.com/problems/median-of-two-sorted-arrays
+
 # Time Complexity: O(log(min(m, n))) – binary search on the shorter array
 # Space Complexity: O(1) – constant space
 
@@ -23,8 +24,8 @@ def findMedianSortedArrays(nums1, nums2):
     l, r = 0, len(A) - 1
 
     while True:
-        i = (l + r) // 2  # Partition index in A
-        j = half - i - 2  # Corresponding partition in B
+        i = (l + r) // 2  # Partition index in A (Mid element of A)
+        j = half - i - 2  # Corresponding partition in B (Mid element of B)
 
         Aleft = A[i] if i >= 0 else float("-inf")
         Aright = A[i + 1] if (i + 1) < len(A) else float("inf")
