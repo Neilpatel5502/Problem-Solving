@@ -1,4 +1,5 @@
-# Problem: https://leetcode.com/problems/merge-k-sorted-lists/
+# Problem: https://leetcode.com/problems/merge-k-sorted-lists
+
 # Time Complexity: O(N log k), where N is total number of nodes, and k is number of lists
 # Space Complexity: O(1) (ignoring the output list), or O(log k) stack space if recursion is used
 
@@ -11,7 +12,7 @@ def mergeKLists(lists):
         - Repeatedly merge pairs of lists until only one remains.
         - For merging two lists, use the standard two-pointer technique.
     """
-    if not lists or len(lists) == 0:
+    if not lists:
         return None
 
     # Merge in pairs until one list remains
